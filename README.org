@@ -1,0 +1,27 @@
+* usql.el
+  Syntax highlighting for [[http://usql.io/][Microsoft's U-SQL language]].
+
+  Currently there is no support for comint buffers or integration with
+  ~org-mode~/~org-babel~. I do intend to fix this as feasible (i.e. there is
+  currently no "interactive" U-SQL analogue, but it should still be possible to
+  submit jobs to ADLA from within emacs).
+
+** Install
+  Use =M-x package-install RET usql= to install. Make sure you have the
+  [[http://melpa.milkbox.net/][MELPA]] package archive enabled in your init.el
+  or .emacs and your package contents are up to date (use =M-x
+  package-refresh-contents= if you can't find the usql package and you've added
+  MELPA to your package archives.
+
+** Usage
+   Open a file ending in ~.usql~ or create a new ~sql-mode~ buffer and call
+   ~sql-set-product~.
+
+** Contributing
+   Want to help out? Colour me interested. This is my first
+   contribution to the emacs ecosystem, so I'm sure I've made some mistakes.
+   Just open an issue or submit a PR and I'll try to get back to you by the
+   following weekend.
+
+** License
+   MIT. See the file LICENSE for more info
