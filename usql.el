@@ -2,10 +2,10 @@
 ;; Copyright (C) 2018 Nicholas Barnwell
 
 ;; Author: Nicholas Barnwell <nb@ul.io>
+;; Homepage: https://github.com/nickbarwell/usql.el
 ;; Version: 0.0.1
-;; Package-Requires: ((sql "3.5"))
-;; Keywords: sql usql
-
+;; Package-Requires: ((emacs "25.1"))
+;; Keywords: languages
 ;;; Commentary:
 
 ;; This package adds U-SQL to the sql-mode product list.
