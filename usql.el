@@ -3,7 +3,7 @@
 
 ;; Author: Nicholas Barnwell <nb@ul.io>
 ;; Homepage: https://github.com/nickbarwell/usql.el
-;; Version: 0.0.2
+;; Version: 0.0.3
 ;; Package-Requires: ((emacs "25.1"))
 ;; Keywords: languages
 ;;; Commentary:
@@ -71,7 +71,10 @@
 (sql-add-product
   'usql "USQL"
   :font-lock 'usql-mode-font-lock-keywords
-  :syntax-alist '((?\" . "\"")))
+  :syntax-alist '((?\" . "\"")
+                  (?- . "@") ;;- is no longer a comment character; inherit from standard syntax table
+                  (?/ . ". 12b")
+                  ))
 
 (add-to-list 'auto-mode-alist '("\\.usql\\'" . (lambda ()
                                                  (sql-mode)
